@@ -26,29 +26,44 @@ Compile each component separately:
 
 **Key generation**
 
+```
 gcc generate-key.c -o generate-key
+```
 
 **Encryption**
 
+```
 gcc encrypt.c -o encrypt
+```
 
 **Decryption**
 
-gcc decrypt.c -o decrypt
+```
+gcc decrypt.c -o decryptt
+```
 
 ## Usage
 
 1. Generate RSA keys:
 
+```
 ./generate-key
+```
 
 2. Encrypt a file:
 
-./encrypt <your-file>
+
+```
+../encrypt <your-file>
+```
+
 
 3. Decrypt the encrypted file:
 
+
+```
 ./decrypt encrypted-<your-file>
+```
 
 The decrypted output is saved with an added `decrypted_` prefix, allowing direct comparison
 with the original file.
